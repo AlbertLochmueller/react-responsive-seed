@@ -12,6 +12,7 @@ const mainClasses = {
     root: style({
         width: '100%',
         height: '100%',
+        overflow: 'scroll',
         [theme.breakpoints.down('sm')]: {
             display: 'flex',
             flexDirection: 'column',
