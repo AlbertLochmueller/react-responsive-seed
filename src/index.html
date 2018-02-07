@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>$title</title>
+  <script>
+    // Removes hash from path, so that "/#/path/to/page" becomes "/path/to/page";
+    // For hosting on AWS S3 a redirection rule is set, which redirects path
+    // like "/path/to/page" to "/#/path/to/page".
+    // See details here: https://stackoverflow.com/q/16267339
+    history.pushState({}, "$title", location.hash.substring(1));
+  </script>
+</head>
+<body>
+<div id="root"></div>
+$bundles
+</body>
+</html>
