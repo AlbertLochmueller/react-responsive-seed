@@ -1,14 +1,16 @@
-# fastreach ui
-This project is a campaign exchange portal based upon an application skeleton for a modern web app
-which is realised using [typescript](http://www.typescriptlang.org/) with [react v16](https://github.com/facebook/react/releases).
+# React Responsive Seed
+
+This project is a responsive web app starter using [typescript](http://www.typescriptlang.org/) with [react v16](https://github.com/facebook/react/releases).
 
 The project follows facebooks ["thinking in react"](https://reactjs.org/docs/thinking-in-react.html)
 guidelines and is preconfigured to install the react framework and a bunch of development and testing
-tools for instant web development gratification.
+tools for instant web development gratification such as [React Dependency Injection](https://github.com/RobinBuschmann/react.di) and [React Router v4](https://github.com/ReactTraining/react-router).
 
 For styling, a react component implementation of google's [Material Design](https://material.io/) is used
-to build the user interface as clean and understanding as possible.
-Currently the beta version of [material-ui](https://material-ui-next.com/) is used
+to build the user interface as clean and understanding as possible. The setup provides dynamic breaks for responsiveness and mobile views
+as well as [TypeStyle](https://github.com/typestyle/typestyle) for a typesafe binding of theme, state & design.
+
+Currently the beta version of [material-ui](https://material-ui-next.com/) is used.
 
 ## Installation
 
@@ -57,7 +59,7 @@ npm test
 ````
 
 Test configurations can be found in `/test` directory. Unit tests are realized with [Enzyme](http://airbnb.io/enzyme/),
-End-To-End tests are written with [Cypress](https://www.cypress.io/)
+End-To-End tests will be written with [Cypress](https://www.cypress.io/)
 
 ### Code coverage
 Run test with code coverage with

@@ -32,7 +32,7 @@ const DEFAULT_CONFIG: FuseBoxOptions = {
         ImageBase64Plugin(),
         SVGPlugin(),
         WebIndexPlugin({
-            title: 'Fast Reach',
+            title: 'Seed',
             template: 'src/index.html'
         }),
         CSSPlugin(),
