@@ -1,18 +1,18 @@
-import {grey, teal} from 'material-ui/colors';
+import {grey, deepOrange} from 'material-ui/colors';
 import {createMuiTheme} from 'material-ui/styles';
 
 export const theme = createMuiTheme({
     palette: {
         primary: {
-            ...teal,
-            A400: '#26A69A',
+            ...deepOrange,
+            A400: '#f49b16',
         },
         secondary: {
             ...grey,
             A400: '#757575',
         },
         text: {
-            primary: '#2E5397',
+            primary: '#6492e0',
             secondary: '#757575',
             disabled: "rgba(0, 0, 0, 0.38)",
             hint: "rgba(0, 0, 0, 0.38)",
@@ -21,7 +21,7 @@ export const theme = createMuiTheme({
             lightDivider: "rgba(0, 0, 0, 0.075)"
         },
         background: {
-        default: '#f5f7fa',
+        default: '#f7f7f7',
         }
     },
     mixins: {

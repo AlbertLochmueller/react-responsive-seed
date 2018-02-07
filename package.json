@@ -25,7 +25,6 @@
     "material-ui-icons": "^1.0.0-beta.17",
     "query-string": "^5.0.1",
     "react": "^16.2.0",
-    "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.2.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",

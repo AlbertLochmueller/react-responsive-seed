@@ -12,6 +12,7 @@ export interface TextInputProps {
     placeholder: string;
     label: string;
     onChange(event);
+    onSubmit?();
 }
 
 const textInputClasses = {
@@ -65,14 +66,15 @@ const textInputClasses = {
     })
 };
 
-export const TextInput = ({name, rows, placeholder, label, defaultValue, hasError, onChange}: TextInputProps) => (
+export const TextInput = ({name, rows, placeholder, label, defaultValue, hasError, onChange, onSubmit}: TextInputProps) => (
     <div>
         {rows ? (
             <TextField
                 name={name}
                 className={textInputClasses.textInput}
-                defaultValue={defaultValue || ""}
+                value={defaultValue || ""}
                 multiline={true}
+                onKeyUp={(e) => (e.keyCode === 13) ? onSubmit && onSubmit() : null}
                 rows={rows}
                 placeholder={placeholder}
                 label={label}
@@ -93,9 +95,10 @@ export const TextInput = ({name, rows, placeholder, label, defaultValue, hasErro
             <TextField
                 name={name}
                 className={textInputClasses.textInput}
-                defaultValue={defaultValue || ""}
+                value={defaultValue || ""}
                 placeholder={placeholder}
                 onChange={(event) => onChange(event)}
+                onKeyUp={(e) => (e.keyCode === 13) ? onSubmit && onSubmit() : null}
                 label={label}
                 InputProps={{
                     disableUnderline: true,
