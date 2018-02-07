@@ -20,10 +20,9 @@ const mainClasses = {
             alignItems: 'center',
         },
         [theme.breakpoints.up('sm')]: {
-            height: '35%',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-around',
+            justifyContent: 'flex-start',
             alignItems: 'center',
         },
     }),
