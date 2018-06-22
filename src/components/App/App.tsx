@@ -4,7 +4,6 @@ import {
     Router,
     Route,
     Switch as RouterSwitch,
-    Redirect
 } from 'react-router-dom';
 import {MuiThemeProvider} from 'material-ui/styles';
 import './App.scss';
@@ -14,7 +13,8 @@ import {Dimensions} from '../../modules/utils/interfaces/Dimensions';
 import {Inject, Module} from 'react.di';
 import {HISTORY_TOKEN} from '../../modules/common/history';
 import {CommonModule} from '../../modules/common/CommonModule';
-import {TodosContainer} from "../../modules/todos/containers/TodosContainer";
+import {BoxContainer} from "../../modules/box/containers/BoxContainer";
+import DnDContainer from "../../modules/dnd/Container";
 
 interface AppState {
     dimensions: Dimensions;
@@ -73,7 +73,7 @@ export class App extends Component<{}, AppState> {
                 <div className={appClasses.root}>
                     <Router history={this.history}>
                             <RouterSwitch>
-                                <Route exact path={'/'} component={TodosContainer}/>
+                                <Route exact path={'/'} component={DnDContainer}/>
                             </RouterSwitch>
                     </Router>
                 </div>

@@ -26,6 +26,7 @@ const MAIN_BUNDLE = `main-${getShortRandomString()}`;
 const ENTRY = '> index.tsx';
 const DEFAULT_CONFIG: FuseBoxOptions = {
     homeDir: 'src',
+    target: "browser",
     output: `${DIST_FOLDER}/$name.js`,
     plugins: [
         JSONPlugin(),
